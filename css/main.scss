@@ -1,0 +1,67 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+//Breakpoint
+@import "../bower_components/compass-breakpoint/stylesheets/breakpoint";
+
+$tablet: 768px;
+$desktop: 1024px;
+$large: 1400px;
+
+//Font awesome
+@import 'font-awesome/scss/font-awesome';
+
+//Suzy
+@import "../bower_components/susy/sass/susy";
+
+@import 'normalize';
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+
+// Our variables
+$base-font-family: "Lato", Helvetica, Arial, sans-serif;
+$base-font-size:   16px;
+$base-font-weight: 400;
+$small-font-size:  $base-font-size * 0.875;
+$base-line-height: 1.5;
+
+$spacing-unit:     30px;
+
+
+$text-color:       #111;
+$background-color: #fdfdfd;
+$brand-color:      #3fb1a3;
+
+$grey-color:       #828282;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark:  darken($grey-color, 25%);
+
+// Width of the content area
+$content-width:    800px;
+$on-palm:          600px;
+$on-laptop:        800px;
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;
+
+//Global Defaults
+@import "partials/mixins";
+@import "partials/variables";
+@import "partials/globals";
+
+//Modules
+@import "modules/home";
+@import "modules/posts";
+@import "modules/footer";

@@ -1,0 +1,33 @@
+/* Footer */
+
+#footer {
+    background: $footerBG;
+    color: #7c8081;
+    padding: 2em 5em;
+    text-align: center;
+    
+    .copyright {
+        font-size: 0.8em;
+    }
+    
+    .icon {
+        height: 2.25em;
+        width: 2.25em;
+        line-height: 2.25em;
+        font-size: 1.4em;
+        border-bottom: none;
+        margin: 0 0.3em;
+    }
+    
+    ul.icons{
+	    
+	    margin-left:0;
+	    
+	   	li {
+	    	display: inline-block;
+	    	line-height: 1em;
+	    	padding-left: 0.5em;
+	    }
+	}
+
+}
