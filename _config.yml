@@ -17,7 +17,7 @@ github_username:  garethf89
 
 # Build settings
 markdown: kramdown
-exclude: ["bower_components", "bower.json","main.min.css", "Gemfile", "Gemfile.lock", "node_modules", "grunt", "Gruntfile.js", "package.json"]
+exclude: ["bower_components", "bower.json","Gemfile", "Gemfile.lock", "node_modules", "grunt", "Gruntfile.js", "package.json"]
 gems: [bourbon]
 
 sass:
