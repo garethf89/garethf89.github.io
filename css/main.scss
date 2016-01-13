@@ -25,7 +25,6 @@ $large: 1400px;
     }
 }
 
-
 // Our variables
 $base-font-family: "Lato", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
@@ -56,6 +55,7 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
+
 //Global Defaults
 @import "partials/mixins";
 @import "partials/variables";
@@ -63,5 +63,6 @@ $on-laptop:        800px;
 
 //Modules
 @import "modules/home";
+@import "modules/header";
 @import "modules/posts";
 @import "modules/footer";

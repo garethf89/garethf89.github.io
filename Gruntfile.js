@@ -15,7 +15,7 @@ module.exports = function (grunt) {
 			dest:{
 				root:"_site",
                 scss:"_site/css",
-				css:"css",
+				css:"_site/css",
 				js:"_site/js",
 				img:"images",
 			}

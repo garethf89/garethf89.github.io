@@ -5,12 +5,6 @@ module.exports = {
         options: {
             spawn: false,
             livereload: true
-        },
-    },
-    server: {
-    files: ['.rebooted'],
-    options: {
-      livereload: true
+        }
     }
-  } 
 };

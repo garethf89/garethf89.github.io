@@ -1,0 +1,137 @@
+/* Nav */
+    
+#nav{
+    
+    cursor: default;
+    font-size: 0.8em;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    background:  $mainGreenHalf; 
+    
+    padding:1em 0;
+    
+    nav{
+        
+        @include breakpoint($desktop){
+            letter-spacing: 0.075em;
+        }
+        
+        position: relative;
+        text-transform: uppercase;
+        text-align: right;
+        
+        ul{
+            margin:0;
+            
+            li{
+                 display:block;
+                 width:100%;
+                 text-align: center;
+                 margin-left:0; 
+                
+                @include breakpoint($desktop){
+                    display: inline-block;
+                    margin-left: 1.5em;
+                    width: auto;
+                    background: none;
+                    
+                    &.active > a{
+                        background: rgba(188, 202, 206, 0.15);
+                        border: solid 1px;
+                    }
+                }
+                
+                &.current{
+                    & > a{
+                        font-weight: 900;
+                    }
+                }
+                
+                &:hover{
+                   & > a {
+                        background: rgba(188, 202, 206, 0.15);
+                        border: solid 1px #fff;
+                    } 
+                }
+                
+                a{
+                    color:#fff; 
+                    width:100%;
+                    border:none;
+                    display: inline-block;
+                    padding: 0 .75em;
+                    text-decoration: none;      
+                    border: 1px solid transparent;
+                }
+            }
+        }
+        
+    }
+}
+
+/* Header */
+#header {
+    
+    color: #fff;
+    cursor: default;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    width:100%;
+    @include transitionMixin(all,.5s,ease-in-out);
+
+    @include breakpoint($desktop){
+        padding:0;
+    }
+
+    .header__inner{
+        
+        @include animationMixin(fade-in, 1s, 0s, ease-in-out);
+        color: #000;
+        display: block;
+        background: none;
+        opacity: 0;
+        padding: 0 1.5em;
+        text-align: center; 
+        
+        @include breakpoint($desktop){
+            display: inline-block;
+            padding: .5em;
+            br {
+                display: none;
+            }
+        }
+        
+        header {
+            display: inline-block;
+            padding: 3px 0 3px 0;
+            
+            h2 {
+                font-size: 2em;
+                letter-spacing: 0.2em;
+                margin: 0;
+                position: relative;
+                text-transform: uppercase;
+                
+                 @include breakpoint($desktop){
+                      font-size: 2.5em;
+                 }
+                
+            }
+        }
+        
+        p {
+            letter-spacing: 0.1em;
+            margin: 0;
+            text-transform: uppercase;
+            text-align: center;
+            
+            a {
+                color: inherit;
+                font-weight: 400;
+                text-decoration: none;
+            }
+        }
+    }
+}
