@@ -7,7 +7,7 @@ module.exports = {
             cwd: '<%= paths.src.css %>/',
             src: ['main.css'],
             dest: '<%= paths.dest.css %>/',
-            ext: '.min.css'
+            ext: '.css'
             }]
     }
 };
